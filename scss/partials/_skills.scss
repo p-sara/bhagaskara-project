@@ -1,0 +1,103 @@
+
+#skills-section {
+  padding:100px;
+}
+#skills-section .section-header h2 {
+  margin-bottom: 90px;
+}
+
+.skills p {
+   color:black;
+   text-transform: uppercase;
+    font-size:35px;
+    display:inline-block;
+    margin:0 auto;
+}
+.skill {
+    background-color:lightgray;
+    width:400px;
+    height:20px;
+    margin:0 auto;
+    clear:both;
+  
+}
+#skills-section h4 {
+    text-align:center;
+    font-size:90px;
+    margin:100px;
+   
+}
+.skill span {
+    background-color:#9f449b;
+    display:block;    
+    height:20px;   
+}
+.skill-1 span {
+  width:360px;    
+}
+.skill-2 span {
+  width:280px;  
+}
+.skill-3 span {
+  width: 300px; 
+}
+.skill-4 span {
+  width: 340px; 
+}
+
+.skillwrap {
+ text-align:center;
+ margin:0 auto;
+ width:400px;
+  padding:6px;
+  margin-bottom:10px;
+
+}
+.skillwrap p:first-child {
+  font-family:"lato";
+  text-transform: uppercase;
+    font-weight: bold;
+    text-align:left;
+    float: left;
+    padding:10px;
+}
+.skillwrap p:nth-child(2) {
+  text-align:right;
+  float: right;
+  padding: 10px;
+}
+@media (min-width:500px) and (orientation:landscape) {
+  #skills-section {
+    text-align:center;
+  }
+  .skillwrap {
+  display:inline-block;
+    width:230px;
+    margin:10px 80px;
+    p {
+  font-size:15px;  
+    }
+  }
+  .skill {
+    width:200px;
+    height:10px;
+}
+  .skill span {
+    background-color:#9f449b;
+    display:block;    
+    height:10px;   
+}
+  .skill-1 span {
+  width:180px;    
+}
+.skill-2 span {
+  width:140px;  
+}
+.skill-3 span {
+  width: 150px; 
+}
+.skill-4 span {
+  width: 170px; 
+}
+  
+}

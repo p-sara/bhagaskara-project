@@ -1,0 +1,44 @@
+#about {
+    background-color:white;
+    height:auto;
+    padding-top:60px;
+}
+
+.imgAbout {
+    margin:0 auto;
+    margin-top:50px;
+    height:495px;
+    width: 770px;
+    background-image: url(../images/mockup.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.description {
+    font-size: 2em;
+    padding: 50px;
+}
+@media (min-width:500px) and (orientation:landscape) {
+  .imgAbout {
+    height: 297px;
+    width: 462px;
+    display:inline-block;
+    margin-left:250px;
+  }
+  .description {
+    font-size:18px;
+    width:400px;
+    display:inline-block;
+    position:relative;
+    top:-110px;
+  }
+  #about .button {
+    display:inline-block;
+    position:relative;
+    top:-40px;
+    left:-315px;
+  }
+  
+  
+  
+}
