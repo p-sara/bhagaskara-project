@@ -105,13 +105,14 @@ p {
 .group div:hover {
   background-image: url("../images/portbg.png"); }
 
-.group a {
+.group p {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  position: relative;
-  display: table;
-  margin: 0 auto; }
+  font-size: 30px;
+  display: inline-block;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif; }
 
 .scroll {
   height: 45px;
@@ -266,35 +267,34 @@ p {
     background-repeat: no-repeat;
     background-size: cover; }
 
-  .box1 a, .box2 a {
+  .box1 p, .box2 p {
     position: relative;
-    left: -25px;
-    top: -25px; }
+    left: -41px;
+    top: -37px; }
 
-  .box3 a, .box4 a, .box6 a {
+  .box3 p, .box4 p, .box6 p {
     position: relative;
-    left: -36px;
-    top: -25px; }
+    left: -49px;
+    top: -37px; }
 
   .box5 p {
     position: relative;
-    left: -20px;
-    top: -25px; }
+    left: -35px;
+    top: -37px; }
 
   .box::before {
     position: relative;
     left: -30px;
     top: -25px; }
 
-  .header-text h1,
-  p {
-    font-size: 25px; }
+  .group .box p {
+    font-size: 17px; }
 
   .header-text p:last-child {
     font-size: 20px; }
 
   .header-text h1 {
-    font-size: 3em; }
+    font-size: 5em; }
 
   .main .group:nth-child(2) {
     position: relative;
@@ -312,9 +312,6 @@ p {
   .main .box::before {
     width: 40px;
     height: 40px; }
-
-  .box a {
-    font-size: 0.5em; }
 
   .scroll {
     visibility: visible; } }
@@ -357,6 +354,9 @@ nav {
   font-size: 60px;
   display: inline-block;
   text-align: center; }
+
+.navbar li a {
+  text-decoration: none; }
 
 .navbar li:last-child {
   margin-left: 25%; }
@@ -901,10 +901,10 @@ nav {
   font-weight: bold;
   text-align: center; }
 
-.photo-sections {
+/*.photo-sections {
   padding: 0;
-  margin: 0 auto; }
-
+  margin: 0 auto;
+}*/
 .photo-sections ul li:hover {
   background-color: #9f449b;
   color: white;

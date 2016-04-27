@@ -39,6 +39,9 @@ nav {
     display:inline-block;
     text-align:center;
 }
+.navbar li a {
+  text-decoration: none;
+}
 .navbar li:last-child {
     margin-left:25%;
 }
