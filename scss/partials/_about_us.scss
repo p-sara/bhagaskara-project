@@ -1,7 +1,8 @@
 #about {
     background-color:white;
     height:auto;
-    padding-top:60px;
+    margin-top:60px;
+  margin-bottom:100px;
 }
 
 .imgAbout {
@@ -9,7 +10,7 @@
     margin-top:50px;
     height:495px;
     width: 770px;
-    background-image: url(../images/mockup.png);
+    //background-image: url(../images/mockup.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,26 +20,23 @@
     padding: 50px;
 }
 @media (min-width:500px) and (orientation:landscape) {
+  .wrapper {
+    width:700px;
+    margin:0 auto;
+  }
   .imgAbout {
-    height: 297px;
-    width: 462px;
+    height: auto;
+    width: 400px;
     display:inline-block;
-    margin-left:250px;
+    margin-left: 30px;
   }
   .description {
     font-size:18px;
-    width:400px;
+    min-width:200px;
+    max-width:250px;
+    height:auto;
     display:inline-block;
-    position:relative;
-    top:-110px;
+    padding: 10px;
   }
-  #about .button {
-    display:inline-block;
-    position:relative;
-    top:-40px;
-    left:-315px;
-  }
-  
-  
   
 }

@@ -6,12 +6,13 @@
     width:400px;
     border-radius:50%;
     display:inline-block;
-    
 }
 
 .photo img {
   border-radius: 50%;
   width:400px;
+  display: block;
+    margin: 0 auto;
 }
 .visible {
     display:400px;
@@ -22,7 +23,7 @@
 .window {
   overflow:hidden;
   width:400px;
-  margin: 0 auto;
+  margin:0 auto;
 }
 .team-slider {
   display:inline-block;
@@ -31,26 +32,23 @@
   font-size:0;
   transition: all .5s ease-in-out;
 }
-.team-slider li:nth-child(1) {
-  background: red;
-}
-.team-slider li:nth-child(2) {
-  background: blue;
-}
-.team-slider li:nth-child(3) {
-  background: hotpink;
-}
 #team .left {
     display:inline-block;
     width:102px;
     height:109px;
-    background-image:url("../images/arr-l.png");   
+    background-image:url("../images/arr-l.png"); 
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 #team .right {
     display:inline-block;
     width:102px;
     height:109px;
     background-image:url("../images/arr-r.png");
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .icon-wrap {
@@ -58,9 +56,6 @@
 }
 .contain {
     display:block;
-    //width:500px;
-    //margin:0 auto;
-    //text-align:center;
 }
 .photo p {
   font-size:40px;
@@ -85,4 +80,30 @@
 }
 .slider-nav {
   text-align:center;
+}
+@media (min-width:500px) and (orientation:landscape) {
+  #team .left {
+    width:51px;
+    height:54px;  
+}
+#team .right {
+    width:51px;
+    height:54px; 
+  }
+  .photo img {
+  border-radius: 50%;
+  width:250px;
+  }
+  .contain .iconfb {
+    width:50px;
+    height:50px;
+}
+  .contain .icongoog {
+    width:50px;
+    height:50px;
+  }
+  .photo p {
+  font-size:20px;
+    padding:5px;
+}
 }

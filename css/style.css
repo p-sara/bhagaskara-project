@@ -356,7 +356,8 @@ nav {
   text-align: center; }
 
 .navbar li a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #9f449b; }
 
 .navbar li:last-child {
   margin-left: 25%; }
@@ -576,14 +577,14 @@ nav {
 #about {
   background-color: white;
   height: auto;
-  padding-top: 60px; }
+  margin-top: 60px;
+  margin-bottom: 100px; }
 
 .imgAbout {
   margin: 0 auto;
   margin-top: 50px;
   height: 495px;
   width: 770px;
-  background-image: url(../images/mockup.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -593,24 +594,23 @@ nav {
   padding: 50px; }
 
 @media (min-width: 500px) and (orientation: landscape) {
+  .wrapper {
+    width: 700px;
+    margin: 0 auto; }
+
   .imgAbout {
-    height: 297px;
-    width: 462px;
+    height: auto;
+    width: 400px;
     display: inline-block;
-    margin-left: 250px; }
+    margin-left: 30px; }
 
   .description {
     font-size: 18px;
-    width: 400px;
+    min-width: 200px;
+    max-width: 250px;
+    height: auto;
     display: inline-block;
-    position: relative;
-    top: -110px; }
-
-  #about .button {
-    display: inline-block;
-    position: relative;
-    top: -40px;
-    left: -315px; } }
+    padding: 10px; } }
 [class*="break"] {
   height: 40vh;
   width: 100%;
@@ -667,12 +667,12 @@ nav {
   .break::before {
     width: 109px;
     height: 118px;
-    margin-top: 10px; }
+    margin-top: 40px; }
 
   .break2::before {
     width: 109px;
     height: 118px;
-    margin-top: 10px; }
+    margin-top: 40px; }
 
   .break p {
     font-size: 20px; } }
@@ -686,7 +686,9 @@ nav {
 
 .photo img {
   border-radius: 50%;
-  width: 400px; }
+  width: 400px;
+  display: block;
+  margin: 0 auto; }
 
 .visible {
   display: 400px;
@@ -706,26 +708,23 @@ nav {
   font-size: 0;
   transition: all .5s ease-in-out; }
 
-.team-slider li:nth-child(1) {
-  background: red; }
-
-.team-slider li:nth-child(2) {
-  background: blue; }
-
-.team-slider li:nth-child(3) {
-  background: hotpink; }
-
 #team .left {
   display: inline-block;
   width: 102px;
   height: 109px;
-  background-image: url("../images/arr-l.png"); }
+  background-image: url("../images/arr-l.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 #team .right {
   display: inline-block;
   width: 102px;
   height: 109px;
-  background-image: url("../images/arr-r.png"); }
+  background-image: url("../images/arr-r.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .icon-wrap {
   text-align: center; }
@@ -757,6 +756,30 @@ nav {
 .slider-nav {
   text-align: center; }
 
+@media (min-width: 500px) and (orientation: landscape) {
+  #team .left {
+    width: 51px;
+    height: 54px; }
+
+  #team .right {
+    width: 51px;
+    height: 54px; }
+
+  .photo img {
+    border-radius: 50%;
+    width: 250px; }
+
+  .contain .iconfb {
+    width: 50px;
+    height: 50px; }
+
+  .contain .icongoog {
+    width: 50px;
+    height: 50px; }
+
+  .photo p {
+    font-size: 20px;
+    padding: 5px; } }
 #skills-section {
   padding: 100px; }
 
@@ -998,33 +1021,26 @@ form {
   .message {
     height: 200px; }
 
+  .wrap-it {
+    width: 800px;
+    margin: 0 auto; }
+
   form {
-    width: 40%;
     display: inline-block;
     text-align: center;
-    margin-left: 285px; }
+    width: 400px; }
     form .button {
       margin-left: 120px;
       margin-top: 7px; }
 
   .address {
     display: inline-block;
-    width: 30%;
-    position: relative;
-    top: -58px;
-    left: -125px; }
+    width: 300px; }
     .address p {
       width: 400px;
       font-size: 18px;
       text-align: left;
       padding: 11px; } }
-footer {
-  width: 100%;
-  padding-top: 150px; }
-
-footer .logo {
-  padding: 0; }
-
 .icon {
   width: 100px;
   height: 100px;
@@ -1056,17 +1072,19 @@ footer .logo {
     width: 50px;
     height: 50px; }
 
-  .allIcons {
-    position: relative;
-    top: -85px;
-    left: -480px; }
-
   footer .logo {
     display: block;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 100px;
     margin-top: 100px; } }
+footer {
+  width: 100%;
+  padding-top: 150px; }
+
+footer .logo {
+  padding: 0; }
+
 .section-header h2 {
   text-align: center;
   font-size: 90px;
